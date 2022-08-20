@@ -18,41 +18,230 @@
 <body>
     <header>
         <img src="/assets/html_css_js.png">
-        <h1>Web App</h1>
+        <h1>3x3x3 Algorithms</h1>
     </header>
 
-    <main>
-        <div class="parent">
-            <div class="div1"> </div>
-            <div class="div2"> </div>
-            <div class="div3"> </div>
-            <div class="div4"> </div>
-            <div class="div5"> </div>
-            <div class="div6"> </div>
-            <div class="div7"> </div>
-            <div class="div8"> </div>
-            <div class="div9"> </div>
-            <div class="div10"> </div>
-            <div class="div11"> </div>
-            <div class="div12"> </div>
-            <div class="div13"> </div>
-            <!-- <div class="div14"> </div>
-            <div class="div15"> </div>
-            <div class="div16"> </div>
-            <div class="div17"> </div> -->
+    <div class="example-container">
+        <h2>Cube Notation</h2>
+
+        <div class="ex-cube">
+            <div class="parentEx">
+                <div class="divex1"> </div>
+                <div class="divex2"> &darr; L </div>
+                <div class="divex3"> </div>
+                <div class="divex4"> &larr;U </div>
+                <div class="divex5"> &uarr; F &darr; </div>
+                <div class="divex6"> D&rarr; </div>
+                <div class="divex7"> </div>
+                <div class="divex8"> R &uarr; </div>
+                <div class="divex9"> </div>
+            </div>
         </div>
-        <!-- <div id="header"></div>
-        <div id="box">
-            <div id="1"></div>
-            <div id="2"></div>
-            <div id="3"></div>
-            <div id="4"></div>
-            <div id="5"></div>
-            <div id="6"></div>
-            <div id="7"></div>
-            <div id="8"></div>
-            <div id="9"></div>
-        </div> -->
+
+        <div class="move-notation">
+            <h2>Move side in arrow direction
+                R, L, U, D: 90&deg; clockwise turn<br>
+                Rw: Right two layers, 90&deg; clockwise<br>
+                R2, L2, U2, D2: 180&deg; turn
+            </h2>
+        </div>
+
+    </div>
+
+        <div class="header">
+            <h1>OLL (Orientation of the Last Layer)</h1>
+            <p>The yellow side should be oriented so that
+                it's the top side of the cube. The bottom
+                edge of the image represents the closest (top-front)
+                edge of the cube.
+            </p>
+        </div>
+
+    <div class="oll-container">
+
+        <div class="cube-container">
+
+            <div class="header">
+                <h2>L</h2>
+            </div>
+
+            <div class="div-l">
+                <div class="parentL">
+                    <div class="div1"> </div>
+                    <div class="div2"> </div>
+                    <div class="div3"> </div>
+                    <div class="div4"> </div>
+                    <div class="div5"> </div>
+                    <div class="div6"> </div>
+                    <div class="div7"> </div>
+                    <div class="div8"> </div>
+                    <div class="div9"> </div>
+                </div>
+            </div>
+
+            <div class="move-notation">
+                <h2>F R' F' Rw<br>
+                    U R U' Rw'
+                </h2>
+            </div>
+
+        </div>
+
+
+        <div class="cube-container">
+            <h2>H</h2>
+
+            <div class="div-h">
+                <div class="parentH">
+                    <div class="div11"> </div>
+                    <div class="div12"> </div>
+                    <div class="div13"> </div>
+                    <div class="div14"> </div>
+                    <div class="div15"> </div>
+                    <div class="div16"> </div>
+                    <div class="div17"> </div>
+                    <div class="div18"> </div>
+                    <div class="div19"> </div>
+                </div>
+            </div>
+
+            <div class="move-notation">
+                <h2>R U R' U<br>
+                    R U' R' U<br>
+                    R U2 R'
+                </h2>
+            </div>
+
+        </div>
+
+        <div class="cube-container">
+            <h2>Pi</h2>
+
+            <div class="div-pi">
+                <div class="parentPi">
+                    <div class="div21"> </div>
+                    <div class="div22"> </div>
+                    <div class="div23"> </div>
+                    <div class="div24"> </div>
+                    <div class="div25"> </div>
+                    <div class="div26"> </div>
+                    <div class="div27"> </div>
+                    <div class="div28"> </div>
+                    <div class="div29"> </div>
+                </div>
+            </div>
+
+            <div class="move-notation">
+                <h2>R U2 R2 U'<br>
+                    R2 U' R2 U2<br>
+                    R
+                </h2>
+            </div>
+
+        </div>
+
+
+        <div class="cube-container">
+            <h2>Antisune</h2>
+
+            <div class="div-antisune">
+                <div class="parent-antisune">
+                    <div class="div31"> </div>
+                    <div class="div32"> </div>
+                    <div class="div33"> </div>
+                    <div class="div34"> </div>
+                    <div class="div35"> </div>
+                    <div class="div36"> </div>
+                    <div class="div37"> </div>
+                    <div class="div38"> </div>
+                    <div class="div39"> </div>
+                </div>
+            </div>
+
+            <div class="move-notation">
+                <h2>R U2 R' U'<br>
+                    R U' R'
+                </h2>
+            </div>
+
+        </div>
+
+        <div class="cube-container">
+            <h2>Sune</h2>
+
+            <div class="div-sune">
+                <div class="parent-sune">
+                    <div class="div41"> </div>
+                    <div class="div42"> </div>
+                    <div class="div43"> </div>
+                    <div class="div44"> </div>
+                    <div class="div45"> </div>
+                    <div class="div46"> </div>
+                    <div class="div47"> </div>
+                    <div class="div48"> </div>
+                    <div class="div49"> </div>
+                </div>
+            </div>
+
+            <div class="move-notation">
+                <h2>R U R' U<br>
+                    R U2 R'
+                </h2>
+            </div>
+
+        </div>
+
+        <div class="cube-container">
+            <h2>U</h2>
+
+            <div class="div-t">
+                <div class="parentU">
+                    <div class="div51"> </div>
+                    <div class="div52"> </div>
+                    <div class="div53"> </div>
+                    <div class="div54"> </div>
+                    <div class="div55"> </div>
+                    <div class="div56"> </div>
+                    <div class="div57"> </div>
+                    <div class="div58"> </div>
+                    <div class="div59"> </div>
+                </div>
+            </div>
+
+            <div class="move-notation">
+                <h2>R2 D R' U2<br>
+                    R D' R' U2<br>
+                    R'
+                </h2>
+            </div>
+
+        </div>
+
+        <div class="cube-container">
+            <h2>T</h2>
+
+            <div class="div-t">
+                <div class="parentT">
+                    <div class="div61"> </div>
+                    <div class="div62"> </div>
+                    <div class="div63"> </div>
+                    <div class="div64"> </div>
+                    <div class="div65"> </div>
+                    <div class="div66"> </div>
+                    <div class="div67"> </div>
+                    <div class="div68"> </div>
+                    <div class="div69"> </div>
+                </div>
+            </div>
+
+            <div class="move-notation">
+                <h2>Rw U R' U'<br>
+                    Rw' F R F'
+                </h2>
+            </div>
+
+        </div>
+    </div>
     </main>
 
     <footer>&copy;2022 Software Developer</footer>

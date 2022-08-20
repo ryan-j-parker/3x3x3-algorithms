@@ -4,12 +4,16 @@
     --footer-background: rgb(243, 242, 242);
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     height: 100vh;
     font-family: 'Rubik', san-serif;
     background: var(--background);
-    /* display: grid;
-    grid-template-rows: auto 1fr auto; */
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 
 header {
@@ -34,132 +38,594 @@ footer {
     background-color: var(--footer-background);
 }
 
-.box {
-    display: grid;
-    grid-template-rows: repeat(3,1fr) 300px;
-    grid-template-columns: repeat(3, 1fr) 300px;
-    grid-template-areas: 
-    "lu uu ru"
-    "ll c rr"
-    "ld dd rd";
+header {}
+
+.example-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.oll-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
 }
 
 /* 
-#box {
-
-}
-
-#1 {
-
-}
-
-#2 {
-
-}
-
-#3 {
-
-}
-
-#4 {
-
-}
-
-#5 {
-
-}
-
-#6 {
-
-}
-
-#7 {
-
-}
-
-#8 {
-
-}
-
-#9 {
-
+.cube-container {
+    display: inline-block;
+    vertical-align: top;
 } */
-/* 
-.parent {
-    height: 100vh;
-    width: 100vw;
+
+.header p {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 2rem;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h1 {
+    font-size: 2rem;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    padding: 10px;
+}
+
+.parentEx {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    color: yellow;
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    border: 3px solid white;
+}
+
+.divex2,
+.divex4,
+.divex6,
+.divex8 {
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    text-align: center;
+}
+
+.divex1 {
+    grid-area: 1 / 1 / 2 / 2;
+    background-color: green;
+    border: 3px solid white;
+}
+
+.divex2 {
+    grid-area: 2 / 1 / 3 / 2;
+    border: 3px solid white;
+    background-color: green;
+}
+
+.divex3 {
+    grid-area: 3 / 1 / 4 / 2;
+    border: 3px solid white;
+    background-color: green;
+}
+
+.divex4 {
+    grid-area: 1 / 2 / 2 / 3;
+    border: 3px solid white;
+    background-color: green;
+}
+
+.divex5 {
+    grid-area: 2 / 2 / 3 / 3;
+    border: 3px solid white;
+    background-color: green;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    text-align: center;
+}
+
+.divex6 {
+    grid-area: 3 / 2 / 4 / 3;
+    border: 3px solid white;
+    background-color: green;
+}
+
+.divex7 {
+    grid-area: 1 / 3 / 2 / 4;
+    border: 3px solid white;
+    background-color: green;
+}
+
+.divex8 {
+    grid-area: 2 / 3 / 3 / 4;
+    border: 3px solid white;
+    background-color: green;
+}
+
+.divex9 {
+    grid-area: 3 / 3 / 4 / 4;
+    border: 3px solid white;
+    background-color: green;
+}
+
+.parentL {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    border: 3px solid white;
 }
 
 .div1 {
-    grid-area: 2 / 1 / 3 / 2;
+    grid-area: 1 / 1 / 2 / 2;
+    background-color: yellow;
+    border: 3px solid white;
 }
 
 .div2 {
-    grid-area: 3 / 1 / 4 / 2;
+    grid-area: 2 / 1 / 3 / 2;
+    border: 3px solid white;
+    background-color: yellow;
 }
 
 .div3 {
-    grid-area: 4 / 1 / 5 / 2;
+    grid-area: 3 / 1 / 4 / 2;
+    border: 3px solid white;
+    border-bottom: 10px solid yellow;
 }
 
 .div4 {
-    grid-area: 2 / 2 / 5 / 5;
+    grid-area: 1 / 2 / 2 / 3;
+    border: 3px solid white;
+    background-color: yellow;
 }
 
 .div5 {
-    grid-area: 1 / 2 / 2 / 3;
+    grid-area: 2 / 2 / 3 / 3;
+    border: 3px solid white;
+    background-color: yellow;
 }
 
 .div6 {
-    grid-area: 1 / 3 / 2 / 4;
+    grid-area: 3 / 2 / 4 / 3;
+    border: 3px solid white;
+    background-color: yellow;
 }
 
 .div7 {
-    grid-area: 1 / 4 / 2 / 5;
+    grid-area: 1 / 3 / 2 / 4;
+    border: 3px solid white;
+    border-right: 10px solid yellow;
 }
 
 .div8 {
-    grid-area: 5 / 2 / 6 / 3;
+    grid-area: 2 / 3 / 3 / 4;
+    border: 3px solid white;
+    background-color: yellow;
 }
 
 .div9 {
-    grid-area: 5 / 3 / 6 / 4;
+    grid-area: 3 / 3 / 4 / 4;
+    border: 3px solid white;
+    background-color: yellow;
 }
 
-.div10 {
-    grid-area: 5 / 4 / 6 / 5;
-} */
-/* 
+.parentH {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    border: 3px solid white;
+}
+
 .div11 {
-    grid-area: 2 / 5 / 3 / 6;
+    grid-area: 1 / 1 / 2 / 2;
+    border: 3px solid white;
+    border-left: 10px solid yellow;
 }
 
 .div12 {
-    grid-area: 3 / 5 / 4 / 6;
+    grid-area: 2 / 1 / 3 / 2;
+    border: 3px solid white;
+    background-color: yellow;
 }
 
 .div13 {
-    grid-area: 4 / 5 / 5 / 6;
+    grid-area: 3 / 1 / 4 / 2;
+    border: 3px solid white;
+    border-left: 10px solid yellow;
 }
 
 .div14 {
-    grid-area: 1 / 1 / 2 / 2;
+    grid-area: 1 / 2 / 2 / 3;
+    border: 3px solid white;
+    background-color: yellow;
 }
 
 .div15 {
-    grid-area: 5 / 1 / 6 / 2;
+    grid-area: 2 / 2 / 3 / 3;
+    border: 3px solid white;
+    background-color: yellow;
 }
 
 .div16 {
-    grid-area: 5 / 5 / 6 / 6;
+    grid-area: 3 / 2 / 4 / 3;
+    border: 3px solid white;
+    background-color: yellow;
 }
 
 .div17 {
-    grid-area: 1 / 5 / 2 / 6; 
-}*/
+    grid-area: 1 / 3 / 2 / 4;
+    border: 3px solid white;
+    border-right: 10px solid yellow;
+}
+
+.div18 {
+    grid-area: 2 / 3 / 3 / 4;
+    border: 3px solid white;
+    background-color: yellow;
+}
+
+.div19 {
+    grid-area: 3 / 3 / 4 / 4;
+    border: 3px solid white;
+    border-right: 10px solid yellow;
+}
+
+.parentPi {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    border: 3px solid white;
+}
+
+.div21 {
+    grid-area: 1 / 1 / 2 / 2;
+    border: 3px solid white;
+    border-left: 10px solid yellow;
+}
+
+.div22 {
+    grid-area: 2 / 1 / 3 / 2;
+    border: 3px solid white;
+    background-color: yellow;
+}
+
+.div23 {
+    grid-area: 3 / 1 / 4 / 2;
+    border: 3px solid white;
+    border-left: 10px solid yellow;
+}
+
+.div24 {
+    grid-area: 1 / 2 / 2 / 3;
+    border: 3px solid white;
+    background-color: yellow;
+}
+
+.div25 {
+    grid-area: 2 / 2 / 3 / 3;
+    border: 3px solid white;
+    background-color: yellow;
+}
+
+.div26 {
+    grid-area: 3 / 2 / 4 / 3;
+    border: 3px solid white;
+    background-color: yellow;
+}
+
+.div27 {
+    grid-area: 1 / 3 / 2 / 4;
+    border: 3px solid white;
+    border-top: 10px solid yellow;
+}
+
+.div28 {
+    grid-area: 2 / 3 / 3 / 4;
+    border: 3px solid white;
+    background-color: yellow;
+}
+
+.div29 {
+    grid-area: 3 / 3 / 4 / 4;
+    border: 3px solid white;
+    border-bottom: 10px solid yellow;
+}
+
+.parent-antisune {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    border: 3px solid white;
+}
+
+.div31 {
+    grid-area: 1 / 1 / 2 / 2;
+    border: 3px solid white;
+    border-left: 10px solid yellow;
+}
+
+.div32 {
+    grid-area: 2 / 1 / 3 / 2;
+    border: 3px solid white;
+    background-color: yellow;
+}
+
+.div33 {
+    grid-area: 3 / 1 / 4 / 2;
+    border: 3px solid white;
+    border-bottom: 10px solid yellow;
+}
+
+.div34 {
+    grid-area: 1 / 2 / 2 / 3;
+    border: 3px solid white;
+    background-color: yellow;
+}
+
+.div35 {
+    grid-area: 2 / 2 / 3 / 3;
+    border: 3px solid white;
+    background-color: yellow;
+}
+
+.div36 {
+    grid-area: 3 / 2 / 4 / 3;
+    border: 3px solid white;
+    background-color: yellow;
+}
+
+.div37 {
+    grid-area: 1 / 3 / 2 / 4;
+    border: 3px solid white;
+    background-color: yellow;
+}
+
+.div38 {
+    grid-area: 2 / 3 / 3 / 4;
+    border: 3px solid white;
+    background-color: yellow;
+}
+
+.div39 {
+    grid-area: 3 / 3 / 4 / 4;
+    border: 3px solid white;
+    border-right: 10px solid yellow;
+}
+
+.parent-sune {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    border: 3px solid white;
+}
+
+.div41 {
+    grid-area: 1 / 1 / 2 / 2;
+    border: 3px solid white;
+    border-top: 10px solid yellow;
+}
+
+.div42 {
+    grid-area: 2 / 1 / 3 / 2;
+    border: 3px solid white;
+    background-color: yellow;
+}
+
+.div43 {
+    grid-area: 3 / 1 / 4 / 2;
+    border: 3px solid white;
+    background-color: yellow;
+}
+
+.div44 {
+    grid-area: 1 / 2 / 2 / 3;
+    border: 3px solid white;
+    background-color: yellow;
+}
+
+.div45 {
+    grid-area: 2 / 2 / 3 / 3;
+    border: 3px solid white;
+    background-color: yellow;
+}
+
+.div46 {
+    grid-area: 3 / 2 / 4 / 3;
+    border: 3px solid white;
+    background-color: yellow;
+}
+
+.div47 {
+    grid-area: 1 / 3 / 2 / 4;
+    border: 3px solid white;
+    border-right: 10px solid yellow;
+}
+
+.div48 {
+    grid-area: 2 / 3 / 3 / 4;
+    border: 3px solid white;
+    background-color: yellow;
+}
+
+.div49 {
+    grid-area: 3 / 3 / 4 / 4;
+    border: 3px solid white;
+    border-bottom: 10px solid yellow;
+}
+
+.parentU {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    border: 3px solid white;
+}
+
+.div51 {
+    grid-area: 1 / 1 / 2 / 2;
+    border: 3px solid white;
+    background-color: yellow;
+}
+
+.div52 {
+    grid-area: 2 / 1 / 3 / 2;
+    border: 3px solid white;
+    background-color: yellow;
+}
+
+.div53 {
+    grid-area: 3 / 1 / 4 / 2;
+    border: 3px solid white;
+    border-bottom: 10px solid yellow;
+}
+
+.div54 {
+    grid-area: 1 / 2 / 2 / 3;
+    border: 3px solid white;
+    background-color: yellow;
+}
+
+.div55 {
+    grid-area: 2 / 2 / 3 / 3;
+    border: 3px solid white;
+    background-color: yellow;
+}
+
+.div56 {
+    grid-area: 3 / 2 / 4 / 3;
+    border: 3px solid white;
+    background-color: yellow;
+}
+
+.div57 {
+    grid-area: 1 / 3 / 2 / 4;
+    border: 3px solid white;
+    background-color: yellow;
+}
+
+.div58 {
+    grid-area: 2 / 3 / 3 / 4;
+    border: 3px solid white;
+    background-color: yellow;
+}
+
+.div59 {
+    grid-area: 3 / 3 / 4 / 4;
+    border: 3px solid white;
+    border-bottom: 10px solid yellow;
+}
+
+.parentT {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    border: 3px solid white;
+}
+
+.div61 {
+    grid-area: 1 / 1 / 2 / 2;
+    border: 3px solid white;
+    border-top: 10px solid yellow;
+}
+
+.div62 {
+    grid-area: 2 / 1 / 3 / 2;
+    border: 3px solid white;
+    background-color: yellow;
+}
+
+.div63 {
+    grid-area: 3 / 1 / 4 / 2;
+    border: 3px solid white;
+    border-bottom: 10px solid yellow;
+}
+
+.div64 {
+    grid-area: 1 / 2 / 2 / 3;
+    border: 3px solid white;
+    background-color: yellow;
+}
+
+.div65 {
+    grid-area: 2 / 2 / 3 / 3;
+    border: 3px solid white;
+    background-color: yellow;
+}
+
+.div66 {
+    grid-area: 3 / 2 / 4 / 3;
+    border: 3px solid white;
+    background-color: yellow;
+}
+
+.div67 {
+    grid-area: 1 / 3 / 2 / 4;
+    border: 3px solid white;
+    background-color: yellow;
+}
+
+.div68 {
+    grid-area: 2 / 3 / 3 / 4;
+    border: 3px solid white;
+    background-color: yellow;
+}
+
+.div69 {
+    grid-area: 3 / 3 / 4 / 4;
+    border: 3px solid white;
+    background-color: yellow;
+}

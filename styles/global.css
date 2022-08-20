@@ -38,7 +38,9 @@ footer {
     background-color: var(--footer-background);
 }
 
-header {}
+header {
+    font-weight: 600;
+}
 
 .example-container {
     display: flex;

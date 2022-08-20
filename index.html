@@ -19,7 +19,7 @@
 
     <header>
         <img src="/assets/html_css_js.png">
-        <h1>3x3x3 Algorithms</h1>
+        <h1 id="name-header">3x3x3 Algorithms</h1>
     </header>
 
     <main>
@@ -42,25 +42,31 @@
 
             <div class="move-notation">
                 
-                    <div class="moves">
-                        <h4>[R , L , U , D , F]:</h4>
-                        <h4>turn entire layer <br>90&deg;
-                            clockwise from<br> center of cube<br> (along arrow direction)</h4>
+                    <div class="moves" id="move-1">
+                        <h4>[R ,  L ,  U ,  D ,  F]:</h4>
+                        <h4>turn layer <br>
+                            90&deg; clockwise<br> 
+                            center of cube<br> 
+                            (arrow direction)</h4>
                     </div>
 
-                    <div class="moves">
-                        <h4>[R' , L' , U' , D' , F']:</h4>
-                        <h4>turn entire layer<br> 90&deg;
-                            counter-clockwise<br> (opposite arrow direction)</h4>
+                    <div class="moves" id="move-2">
+                        <h4>[R' ,  L' ,  U' ,  D' ,  F']:</h4>
+                        <h4>turn entire layer<br> 
+                            90&deg; counter-clockwise<br> 
+                            (opposite arrow direction)</h4>
                     </div>
 
-                    <div class="moves">
-                        <h4>[R2 , L2 , U2 , D2 , F2]: </h4>
-                        <h4>turn layer 180&deg;<br>
-                        [Rw , Lw , Uw , Dw]<br>
-                        add middle layer to turn</h4>
+                    <div class="moves" id="move-3">
+                        <h4>[R2 ,  L2 ,  U2 ,  D2 ,  F2]:</h4>
+                        <h4>turn layer 180&deg;</h4>
                     </div>
                 
+                    <div class="moves" id="move-4">
+                        <h4>[Rw ,  Lw ,  Uw ,  Dw,  Fw]:</h4>
+                        <h4>turn outermost<br>
+                        two layers 90&deg;</h4>
+                    </div>
             </div>
 
         </div>
@@ -79,7 +85,7 @@
             <div class="cube-container">
 
                 <div class="header">
-                    <h2>L</h2>
+                    <h5>&lt; L &gt;</h5>
                 </div>
 
                 <div class="div-l">
@@ -106,7 +112,7 @@
 
 
             <div class="cube-container">
-                <h2>H</h2>
+                <h5>&lt; H &gt;</h5>
 
                 <div class="div-h">
                     <div class="parentH">
@@ -132,7 +138,7 @@
             </div>
 
             <div class="cube-container">
-                <h2>Pi</h2>
+                <h5>&lt; Pi &gt;</h5>
 
                 <div class="div-pi">
                     <div class="parentPi">
@@ -159,7 +165,7 @@
 
 
             <div class="cube-container">
-                <h2>Antisune</h2>
+                <h5>&lt; Antisune &gt;</h5>
 
                 <div class="div-antisune">
                     <div class="parent-antisune">
@@ -184,7 +190,7 @@
             </div>
 
             <div class="cube-container">
-                <h2>Sune</h2>
+                <h5>&lt; Sune &gt;</h5>
 
                 <div class="div-sune">
                     <div class="parent-sune">
@@ -209,7 +215,7 @@
             </div>
 
             <div class="cube-container">
-                <h2>U</h2>
+                <h5>&lt; U &gt;</h5>
 
                 <div class="div-t">
                     <div class="parentU">
@@ -235,7 +241,7 @@
             </div>
 
             <div class="cube-container">
-                <h2>T</h2>
+                <h5>&lt; T &gt;</h5>
 
                 <div class="div-t">
                     <div class="parentT">

@@ -18,13 +18,27 @@
 <body>
 
     <header>
-        <img src="/assets/html_css_js.png">
+        <img id="rubiks-banner" src="/assets/rubiks-banner-cropped.png">
         <h1 id="name-header">3x3x3 Algorithms</h1>
     </header>
 
     <main>
+
+        <div class="header">
+            <h1>OLL (Orientation of the Last Layer)</h1>
+            <div class="oll-exp">
+                <p class="oll-1">The goal of this stage is to get all the yellow faces on the same side 
+                of the cube opposite the white side. Each case outlined below is accompanied by a name and
+                the relative probability of its occurrence in any given solve.</p> 
+                <p class="oll-2">In the algorithms presented below, yellow is the 'U' layer, 
+                so the cube should be held with the yellow side on top, facing up, with the unsolved
+                yellow faces (represented by thin yellow bars) oriented in the same way as the corresponding image.</p>
+            </div>
+        </div>
+
+
         <div class="example-container">
-            <h1>Cube Notation</h1>
+            <h1>&lt; a note on cube notation &gt;</h1>
 
             <div class="ex-cube">
                 <div class="parentEx">
@@ -41,43 +55,34 @@
             </div>
 
             <div class="move-notation">
-                
-                    <div class="moves" id="move-1">
-                        <h4>[R ,  L ,  U ,  D ,  F]:</h4>
-                        <h4>turn layer <br>
-                            90&deg; clockwise<br> 
-                            center of cube<br> 
-                            (arrow direction)</h4>
-                    </div>
 
-                    <div class="moves" id="move-2">
-                        <h4>[R' ,  L' ,  U' ,  D' ,  F']:</h4>
-                        <h4>turn entire layer<br> 
-                            90&deg; counter-clockwise<br> 
-                            (opposite arrow direction)</h4>
-                    </div>
+                <div class="moves" id="move-1">
+                    <h4>[R , L , U , D , F]:</h4>
+                    <h4>turn layer <br>
+                        90&deg; clockwise<br>
+                        center of cube<br>
+                        (arrow direction)</h4>
+                </div>
 
-                    <div class="moves" id="move-3">
-                        <h4>[R2 ,  L2 ,  U2 ,  D2 ,  F2]:</h4>
-                        <h4>turn layer 180&deg;</h4>
-                    </div>
-                
-                    <div class="moves" id="move-4">
-                        <h4>[Rw ,  Lw ,  Uw ,  Dw,  Fw]:</h4>
-                        <h4>turn outermost<br>
+                <div class="moves" id="move-2">
+                    <h4>[R' , L' , U' , D' , F']:</h4>
+                    <h4>turn entire layer<br>
+                        90&deg; counter-clockwise<br>
+                        (opposite arrow direction)</h4>
+                </div>
+
+                <div class="moves" id="move-3">
+                    <h4>[R2 , L2 , U2 , D2 , F2]:</h4>
+                    <h4>turn layer 180&deg;</h4>
+                </div>
+
+                <div class="moves" id="move-4">
+                    <h4>[Rw , Lw , Uw , Dw, Fw]:</h4>
+                    <h4>turn outermost<br>
                         two layers 90&deg;</h4>
-                    </div>
+                </div>
             </div>
 
-        </div>
-
-        <div class="header">
-            <h1>OLL (Orientation of the Last Layer)</h1>
-            <p>The yellow side should be oriented so that
-                it's the top side of the cube. The bottom
-                edge of the image represents the closest (top-front)
-                edge of the cube.
-            </p>
         </div>
 
         <div class="oll-container">

@@ -5,7 +5,6 @@
 body {
     height: 100vh;
     font-family: 'Rubik', san-serif;
-    background: var(--background);
     display: grid;
     grid-template-rows: auto 1fr auto;
 }
@@ -28,16 +27,25 @@ main {
 
 footer {
     position: sticky;
-    bottom: 0;
+    bottom: 0; 
     padding: 7px 20px;
     font-size: .8em;
     display: flex;
     justify-content: flex-end;
     background-color: rgb(255, 122, 122);
     opacity: 65%;
-    height: 20px;
+    height: 1.6rem;
     color: white;
+    text-align: right;
 }
+/* 
+#footer-div {
+    margin-right: 0;
+}
+
+#footer-name {
+    text-align: right;
+} */
 
 #rubiks-banner {
     height: 50px;

@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="icon" type="image/x-icon" href="/assets/alchemy-favicon.png" />
+    <link rel="icon" type="image/x-icon" href="/assets/rubiks-banner-cropped.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet"
@@ -24,17 +24,16 @@
 
     <main>
 
-        <div class="header">
-            <h1>OLL (Orientation of the Last Layer)</h1>
-            <div class="oll-exp">
-                <p class="oll-1">The goal of this stage is to get all the yellow faces on the same side 
-                of the cube opposite the white side. Each case outlined below is accompanied by a name and
-                the relative probability of its occurrence in any given solve.</p> 
-                <p class="oll-2">In the algorithms presented below, yellow is the 'U' layer, 
-                so the cube should be held with the yellow side on top, facing up, with the unsolved
-                yellow faces (represented by thin yellow bars) oriented in the same way as the corresponding image.</p>
-            </div>
-        </div>
+                <div class="algo-intro">
+                    <h1 class="intro-head">All essential OLL and PLL algorithms</h1>
+                    <p class="oll-1">The algorithms below are all you need to
+                        reduce your solve time to under a minute. The OLL algorithms
+                        assume you have already solved the yellow cross and therefore
+                        have all yellow edge pieces in place. Once the last layer is oriented, 
+                        the last stage of the solve will generally require at least 
+                        two of the PLL algorithms below.  
+                    </p>
+                </div>
 
 
         <div class="example-container">
@@ -59,7 +58,7 @@
                 <div class="moves" id="move-1">
                     <h4>[R , L , U , D , F]:</h4>
                     <h4>turn layer <br>
-                        90&deg; clockwise<br>
+                        90&deg; clockwise to<br>
                         center of cube<br>
                         (arrow direction)</h4>
                 </div>
@@ -85,13 +84,26 @@
 
         </div>
 
+        <div class="header">
+            <h1>OLL (Orientation of the Last Layer)</h1>
+            <div class="oll-exp">
+                <p class="oll-1">The goal of this stage is to get all the yellow faces on the same side
+                    of the cube opposite the white side. Each case outlined below is accompanied by a name and
+                    the relative probability of its occurrence in any given solve.</p>
+                <p class="oll-2">In the algorithms presented below, yellow is the 'U' layer,
+                    so the cube should be held with the yellow side on top, facing up, with the unsolved
+                    yellow faces (represented by thin yellow bars) oriented in the same way as the corresponding image.
+                </p>
+            </div>
+            <p class="oll-exp"></p>
+        </div>
+
         <div class="oll-container">
 
             <div class="cube-container">
-
-                <div class="header">
-                    <h5>&lt; L &gt;</h5>
-                </div>
+                    <h5>&lt; L &gt;
+                        <p>4 / 27</p>
+                    </h5>
 
                 <div class="div-l">
                     <div class="parentL">
@@ -117,8 +129,9 @@
 
 
             <div class="cube-container">
-                <h5>&lt; H &gt;</h5>
-
+                <h5>&lt; H &gt;
+                    <p>2 / 27</p>
+                </h5>
                 <div class="div-h">
                     <div class="parentH">
                         <div class="div11"> </div>
@@ -143,8 +156,9 @@
             </div>
 
             <div class="cube-container">
-                <h5>&lt; Pi &gt;</h5>
-
+                <h5>&lt; Pi &gt;
+                    <p>4 / 27</p>
+                </h5>
                 <div class="div-pi">
                     <div class="parentPi">
                         <div class="div21"> </div>
@@ -170,8 +184,9 @@
 
 
             <div class="cube-container">
-                <h5>&lt; Antisune &gt;</h5>
-
+                <h5>&lt; Antisune &gt;
+                    <p>4 / 27</p>
+                </h5>
                 <div class="div-antisune">
                     <div class="parent-antisune">
                         <div class="div31"> </div>
@@ -195,8 +210,9 @@
             </div>
 
             <div class="cube-container">
-                <h5>&lt; Sune &gt;</h5>
-
+                <h5>&lt; Sune &gt;
+                    <p>4 / 27</p>
+                </h5>
                 <div class="div-sune">
                     <div class="parent-sune">
                         <div class="div41"> </div>
@@ -220,8 +236,9 @@
             </div>
 
             <div class="cube-container">
-                <h5>&lt; U &gt;</h5>
-
+                <h5>&lt; U &gt;
+                    <p>4 / 27</p>
+                </h5>
                 <div class="div-t">
                     <div class="parentU">
                         <div class="div51"> </div>
@@ -246,8 +263,9 @@
             </div>
 
             <div class="cube-container">
-                <h5>&lt; T &gt;</h5>
-
+                <h5>&lt; T &gt;
+                    <p>4 / 27</p>
+                </h5>
                 <div class="div-t">
                     <div class="parentT">
                         <div class="div61"> </div>
@@ -270,9 +288,201 @@
 
             </div>
         </div>
+
+        <div class="header">
+            <h1>PLL (Permutation of the Last Layer)</h1>
+            <div class="oll-exp">
+                <p class="oll-1">The goal of this stage is to get all of the previously oriented
+                    cubelets, with all yellow faces on the same side, into their final and correct positions. Once again, each case presented 
+                    below is accompanied by a name and the likelihood of its occurrence in a solve.</p>
+                <p class="oll-2">In the cases presented below, color is not as important as the patterns
+                    that the colors represent. If possible, match your cube to the example, but in most cases  
+                    you'll want to recognize which cubelets are out of place relative to the others and use the case as a template.
+                </p>
+            </div>
+            <p class="oll-exp"></p>
+        </div>
+
+        <div class="pll-algorithms">
+
+            <div class="pll-container">
+                <h5>&lt; T - Perm &gt;
+                    <p>1 / 18</p>
+                </h5>
+
+                <div class="pll-div1">
+                    <div class="parent-tperm">
+                        <div class="pll1"> </div>
+                        <div class="pll2"> </div>
+                        <div class="pll3"> </div>
+                        <div class="pll4"> </div>
+                        <div class="pll5"> </div>
+                        <div class="pll6"> </div>
+                        <div class="pll7"> </div>
+                        <div class="pll8"> </div>
+                        <div class="pll9"> </div>
+                    </div>
+                </div>
+
+                <div class="move-notation">
+                    <h2>R U R' U'<br>
+                        R' F R2<br>
+                        U' R' U'<br>
+                        R U R' F'
+                    </h2>
+                </div>
+
+            </div>
+
+            <div class="pll-container">
+                <h5>&lt; H - Perm &gt;
+                    <p>1 / 72</p>
+                </h5>
+
+                <div class="pll-div1">
+                    <div class="parent-hperm">
+                        <div class="pll11"> </div>
+                        <div class="pll12"> </div>
+                        <div class="pll13"> </div>
+                        <div class="pll14"> </div>
+                        <div class="pll15"> </div>
+                        <div class="pll16"> </div>
+                        <div class="pll17"> </div>
+                        <div class="pll18"> </div>
+                        <div class="pll19"> </div>
+                    </div>
+                </div>
+
+                <div class="move-notation">
+                    <h2>M2 U<br>
+                        M2 U2<br>
+                        M2 U<br>
+                        M2
+                    </h2>
+                </div>
+
+            </div>
+
+            <div class="pll-container">
+                <h5>&lt; U - Perm (a) &gt;
+                    <p>1 / 18</p>
+                </h5>
+            
+                <div class="pll-div1">
+                    <div class="parent-uperma">
+                        <div class="pll21"> </div>
+                        <div class="pll22"> </div>
+                        <div class="pll23"> </div>
+                        <div class="pll24"> </div>
+                        <div class="pll25"> </div>
+                        <div class="pll26"> </div>
+                        <div class="pll27"> </div>
+                        <div class="pll28"> </div>
+                        <div class="pll29"> </div>
+                    </div>
+                </div>
+            
+                <div class="move-notation">
+                    <h2>R U' R U<br>
+                        R U R U'<br>
+                        R' U' R2
+                    </h2>
+                </div>
+            
+            </div>
+
+            <div class="pll-container">
+                <h5>&lt; U - Perm (b) &gt;
+                    <p>1 / 18</p>
+                </h5>
+            
+                <div class="pll-div1">
+                    <div class="parent-upermb">
+                        <div class="pll31"> </div>
+                        <div class="pll32"> </div>
+                        <div class="pll33"> </div>
+                        <div class="pll34"> </div>
+                        <div class="pll35"> </div>
+                        <div class="pll36"> </div>
+                        <div class="pll37"> </div>
+                        <div class="pll38"> </div>
+                        <div class="pll39"> </div>
+                    </div>
+                </div>
+            
+                <div class="move-notation">
+                    <h2>R2 U R U<br>
+                        R' U' R' U' R'<br>
+                        U R'
+                    </h2>
+                </div>
+            
+            </div>
+
+            <div class="pll-container">
+                <h5>&lt; Z - Perm &gt;
+                    <p>1 / 36</p>
+                </h5>
+            
+                <div class="pll-div1">
+                    <div class="parent-zperm">
+                        <div class="pll41"> </div>
+                        <div class="pll42"> </div>
+                        <div class="pll43"> </div>
+                        <div class="pll44"> </div>
+                        <div class="pll45"> </div>
+                        <div class="pll46"> </div>
+                        <div class="pll47"> </div>
+                        <div class="pll48"> </div>
+                        <div class="pll49"> </div>
+                    </div>
+                </div>
+            
+                <div class="move-notation">
+                    <h2>M2 U M2 U<br>
+                        M' U2 M2 U2<br>
+                        M' U2
+                    </h2>
+                </div>
+            
+            </div>
+
+            <div class="pll-container">
+                <h5>&lt; A - Perm (a) &gt;
+                    <p>1 / 18</p>
+                </h5>
+            
+                <div class="pll-div1">
+                    <div class="parent-aperm">
+                        <div class="pll51"> </div>
+                        <div class="pll52"> </div>
+                        <div class="pll53"> </div>
+                        <div class="pll54"> </div>
+                        <div class="pll55"> </div>
+                        <div class="pll56"> </div>
+                        <div class="pll57"> </div>
+                        <div class="pll58"> </div>
+                        <div class="pll59"> </div>
+                    </div>
+                </div>
+            
+                <div class="move-notation">
+                    <h2>R' F R' B2<br>
+                        R F' R' B2<br>
+                        R2
+                    </h2>
+                </div>
+            
+            </div>
+
+        </div>
     </main>
 
-    <footer>&copy;2022 Software Developer</footer>
+    <footer>
+
+        &copy;2022 Ryan J. Parker
+
+    </footer>
 
     <script type="module" src="app.js"></script>
 </body>

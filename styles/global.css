@@ -3,8 +3,9 @@
     --yellow: #ffed2a;
     --blue: rgb(22, 22, 182);
     --orange: rgb(255, 96, 39);
-    --alt-header: rgb(83, 236, 172);
-    --alt-footer: rgb(255, 122, 122);
+    --header: rgb(83, 236, 172);
+    --footer: rgb(255, 122, 122);
+    --alt-footer: rgb(84, 212, 159);
 }
 
 * {
@@ -34,7 +35,6 @@ main {
 }
 
 footer {
-    position: sticky;
     bottom: 0; 
     padding: 7px 20px;
     font-size: .8rem;
@@ -44,7 +44,7 @@ footer {
     background-color: rgb(37, 37, 37);
     height: 1.2rem;
     text-align: right;
-    color: rgb(84, 212, 159);
+    color: var(--header);
     font-weight: 600;
 }
 
@@ -66,7 +66,7 @@ footer {
 }
 
 #name-header {
-    color: var(--alt-header);
+    color: var(--header);
 }
 
 .example-container {

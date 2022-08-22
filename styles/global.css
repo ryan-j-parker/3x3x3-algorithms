@@ -1,3 +1,10 @@
+:root {
+    --red: rgb(214, 19, 19);
+    --yellow: #ffed2a;
+    --blue: rgb(22, 22, 182);
+    --orange: rgb(255, 96, 39);
+}
+
 * {
     box-sizing: border-box;
 }
@@ -75,7 +82,7 @@ footer {
     align-items: center;
 }
 
-.oll-container {
+.oll-container, .pll-algorithms {
     display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -128,6 +135,11 @@ h5 {
     text-align: center;
     font-size: 2rem;
     padding: 10px;
+}
+
+h5 p {
+    font-size: 1rem;
+    color: rgb(97, 243, 182);
 }
 
 .notation-header {
@@ -251,55 +263,55 @@ h5 {
 .div1 {
     grid-area: 1 / 1 / 2 / 2;
     border: 3px solid white;
-    background-color: #ffed2a;
+    background-color: var(--yellow);
 }
 
 .div2 {
     grid-area: 2 / 1 / 3 / 2;
     border: 3px solid white;
-    background-color: #ffed2a;
+    background-color: var(--yellow);
 }
 
 .div3 {
     grid-area: 3 / 1 / 4 / 2;
     border: 3px solid white;
-    border-bottom: 10px solid #ffed2a;
+    border-bottom: 10px solid var(--yellow);
 }
 
 .div4 {
     grid-area: 1 / 2 / 2 / 3;
     border: 3px solid white;
-    background-color: #ffed2a;
+    background-color: var(--yellow);
 }
 
 .div5 {
     grid-area: 2 / 2 / 3 / 3;
     border: 3px solid white;
-    background-color: #ffed2a;
+    background-color: var(--yellow);
 }
 
 .div6 {
     grid-area: 3 / 2 / 4 / 3;
     border: 3px solid white;
-    background-color: #ffed2a;
+    background-color: var(--yellow);
 }
 
 .div7 {
     grid-area: 1 / 3 / 2 / 4;
     border: 3px solid white;
-    border-right: 10px solid #ffed2a;
+    border-right: 10px solid var(--yellow);
 }
 
 .div8 {
     grid-area: 2 / 3 / 3 / 4;
     border: 3px solid white;
-    background-color: #ffed2a;
+    background-color: var(--yellow);
 }
 
 .div9 {
     grid-area: 3 / 3 / 4 / 4;
     border: 3px solid white;
-    background-color: #ffed2a;
+    background-color: var(--yellow);
 }
 
 .parentH {
@@ -317,55 +329,55 @@ h5 {
 .div11 {
     grid-area: 1 / 1 / 2 / 2;
     border: 3px solid white;
-    border-left: 10px solid #ffed2a;
+    border-left: 10px solid var(--yellow);
 }
 
 .div12 {
     grid-area: 2 / 1 / 3 / 2;
     border: 3px solid white;
-    background-color: #ffed2a;
+    background-color: var(--yellow);
 }
 
 .div13 {
     grid-area: 3 / 1 / 4 / 2;
     border: 3px solid white;
-    border-left: 10px solid #ffed2a;
+    border-left: 10px solid var(--yellow);
 }
 
 .div14 {
     grid-area: 1 / 2 / 2 / 3;
     border: 3px solid white;
-    background-color: #ffed2a;
+    background-color: var(--yellow);
 }
 
 .div15 {
     grid-area: 2 / 2 / 3 / 3;
     border: 3px solid white;
-    background-color: #ffed2a;
+    background-color: var(--yellow);
 }
 
 .div16 {
     grid-area: 3 / 2 / 4 / 3;
     border: 3px solid white;
-    background-color: #ffed2a;
+    background-color: var(--yellow);
 }
 
 .div17 {
     grid-area: 1 / 3 / 2 / 4;
     border: 3px solid white;
-    border-right: 10px solid #ffed2a;
+    border-right: 10px solid var(--yellow);
 }
 
 .div18 {
     grid-area: 2 / 3 / 3 / 4;
     border: 3px solid white;
-    background-color: #ffed2a;
+    background-color: var(--yellow);
 }
 
 .div19 {
     grid-area: 3 / 3 / 4 / 4;
     border: 3px solid white;
-    border-right: 10px solid #ffed2a;
+    border-right: 10px solid var(--yellow);
 }
 
 .parentPi {
@@ -383,55 +395,55 @@ h5 {
 .div21 {
     grid-area: 1 / 1 / 2 / 2;
     border: 3px solid white;
-    border-left: 10px solid #ffed2a;
+    border-left: 10px solid var(--yellow);
 }
 
 .div22 {
     grid-area: 2 / 1 / 3 / 2;
     border: 3px solid white;
-    background-color: #ffed2a;
+    background-color: var(--yellow);
 }
 
 .div23 {
     grid-area: 3 / 1 / 4 / 2;
     border: 3px solid white;
-    border-left: 10px solid #ffed2a;
+    border-left: 10px solid var(--yellow);
 }
 
 .div24 {
     grid-area: 1 / 2 / 2 / 3;
     border: 3px solid white;
-    background-color: #ffed2a;
+    background-color: var(--yellow);
 }
 
 .div25 {
     grid-area: 2 / 2 / 3 / 3;
     border: 3px solid white;
-    background-color: #ffed2a;
+    background-color: var(--yellow);
 }
 
 .div26 {
     grid-area: 3 / 2 / 4 / 3;
     border: 3px solid white;
-    background-color: #ffed2a;
+    background-color: var(--yellow);
 }
 
 .div27 {
     grid-area: 1 / 3 / 2 / 4;
     border: 3px solid white;
-    border-top: 10px solid #ffed2a;
+    border-top: 10px solid var(--yellow);
 }
 
 .div28 {
     grid-area: 2 / 3 / 3 / 4;
     border: 3px solid white;
-    background-color: #ffed2a;
+    background-color: var(--yellow);
 }
 
 .div29 {
     grid-area: 3 / 3 / 4 / 4;
     border: 3px solid white;
-    border-bottom: 10px solid #ffed2a;
+    border-bottom: 10px solid var(--yellow);
 }
 
 .parent-antisune {
@@ -449,55 +461,55 @@ h5 {
 .div31 {
     grid-area: 1 / 1 / 2 / 2;
     border: 3px solid white;
-    border-left: 10px solid #ffed2a;
+    border-left: 10px solid var(--yellow);
 }
 
 .div32 {
     grid-area: 2 / 1 / 3 / 2;
     border: 3px solid white;
-    background-color: #ffed2a;
+    background-color: var(--yellow);
 }
 
 .div33 {
     grid-area: 3 / 1 / 4 / 2;
     border: 3px solid white;
-    border-bottom: 10px solid #ffed2a;
+    border-bottom: 10px solid var(--yellow);
 }
 
 .div34 {
     grid-area: 1 / 2 / 2 / 3;
     border: 3px solid white;
-    background-color: #ffed2a;
+    background-color: var(--yellow);
 }
 
 .div35 {
     grid-area: 2 / 2 / 3 / 3;
     border: 3px solid white;
-    background-color: #ffed2a;
+    background-color: var(--yellow);
 }
 
 .div36 {
     grid-area: 3 / 2 / 4 / 3;
     border: 3px solid white;
-    background-color: #ffed2a;
+    background-color: var(--yellow);
 }
 
 .div37 {
     grid-area: 1 / 3 / 2 / 4;
     border: 3px solid white;
-    background-color: #ffed2a;
+    background-color: var(--yellow);
 }
 
 .div38 {
     grid-area: 2 / 3 / 3 / 4;
     border: 3px solid white;
-    background-color: #ffed2a;
+    background-color: var(--yellow);
 }
 
 .div39 {
     grid-area: 3 / 3 / 4 / 4;
     border: 3px solid white;
-    border-right: 10px solid #ffed2a;
+    border-right: 10px solid var(--yellow);
 }
 
 .parent-sune {
@@ -515,55 +527,55 @@ h5 {
 .div41 {
     grid-area: 1 / 1 / 2 / 2;
     border: 3px solid white;
-    border-top: 10px solid #ffed2a;
+    border-top: 10px solid var(--yellow);
 }
 
 .div42 {
     grid-area: 2 / 1 / 3 / 2;
     border: 3px solid white;
-    background-color: #ffed2a;
+    background-color: var(--yellow);
 }
 
 .div43 {
     grid-area: 3 / 1 / 4 / 2;
     border: 3px solid white;
-    background-color: #ffed2a;
+    background-color: var(--yellow);
 }
 
 .div44 {
     grid-area: 1 / 2 / 2 / 3;
     border: 3px solid white;
-    background-color: #ffed2a;
+    background-color: var(--yellow);
 }
 
 .div45 {
     grid-area: 2 / 2 / 3 / 3;
     border: 3px solid white;
-    background-color: #ffed2a;
+    background-color: var(--yellow);
 }
 
 .div46 {
     grid-area: 3 / 2 / 4 / 3;
     border: 3px solid white;
-    background-color: #ffed2a;
+    background-color: var(--yellow);
 }
 
 .div47 {
     grid-area: 1 / 3 / 2 / 4;
     border: 3px solid white;
-    border-right: 10px solid #ffed2a;
+    border-right: 10px solid var(--yellow);
 }
 
 .div48 {
     grid-area: 2 / 3 / 3 / 4;
     border: 3px solid white;
-    background-color: #ffed2a;
+    background-color: var(--yellow);
 }
 
 .div49 {
     grid-area: 3 / 3 / 4 / 4;
     border: 3px solid white;
-    border-bottom: 10px solid #ffed2a;
+    border-bottom: 10px solid var(--yellow);
 }
 
 .parentU {
@@ -581,55 +593,55 @@ h5 {
 .div51 {
     grid-area: 1 / 1 / 2 / 2;
     border: 3px solid white;
-    background-color: #ffed2a;
+    background-color: var(--yellow);
 }
 
 .div52 {
     grid-area: 2 / 1 / 3 / 2;
     border: 3px solid white;
-    background-color: #ffed2a;
+    background-color: var(--yellow);
 }
 
 .div53 {
     grid-area: 3 / 1 / 4 / 2;
     border: 3px solid white;
-    border-bottom: 10px solid #ffed2a;
+    border-bottom: 10px solid var(--yellow);
 }
 
 .div54 {
     grid-area: 1 / 2 / 2 / 3;
     border: 3px solid white;
-    background-color: #ffed2a;
+    background-color: var(--yellow);
 }
 
 .div55 {
     grid-area: 2 / 2 / 3 / 3;
     border: 3px solid white;
-    background-color: #ffed2a;
+    background-color: var(--yellow);
 }
 
 .div56 {
     grid-area: 3 / 2 / 4 / 3;
     border: 3px solid white;
-    background-color: #ffed2a;
+    background-color: var(--yellow);
 }
 
 .div57 {
     grid-area: 1 / 3 / 2 / 4;
     border: 3px solid white;
-    background-color: #ffed2a;
+    background-color: var(--yellow);
 }
 
 .div58 {
     grid-area: 2 / 3 / 3 / 4;
     border: 3px solid white;
-    background-color: #ffed2a;
+    background-color: var(--yellow);
 }
 
 .div59 {
     grid-area: 3 / 3 / 4 / 4;
     border: 3px solid white;
-    border-bottom: 10px solid #ffed2a;
+    border-bottom: 10px solid var(--yellow);
 }
 
 .parentT {
@@ -647,53 +659,593 @@ h5 {
 .div61 {
     grid-area: 1 / 1 / 2 / 2;
     border: 3px solid white;
-    border-top: 10px solid #ffed2a;
+    border-top: 10px solid var(--yellow);
 }
 
 .div62 {
     grid-area: 2 / 1 / 3 / 2;
     border: 3px solid white;
-    background-color: #ffed2a;
+    background-color: var(--yellow);
 }
 
 .div63 {
     grid-area: 3 / 1 / 4 / 2;
     border: 3px solid white;
-    border-bottom: 10px solid #ffed2a;
+    border-bottom: 10px solid var(--yellow);
 }
 
 .div64 {
     grid-area: 1 / 2 / 2 / 3;
     border: 3px solid white;
-    background-color: #ffed2a;
+    background-color: var(--yellow);
 }
 
 .div65 {
     grid-area: 2 / 2 / 3 / 3;
     border: 3px solid white;
-    background-color: #ffed2a;
+    background-color: var(--yellow);
 }
 
 .div66 {
     grid-area: 3 / 2 / 4 / 3;
     border: 3px solid white;
-    background-color: #ffed2a;
+    background-color: var(--yellow);
 }
 
 .div67 {
     grid-area: 1 / 3 / 2 / 4;
     border: 3px solid white;
-    background-color: #ffed2a;
+    background-color: var(--yellow);
 }
 
 .div68 {
     grid-area: 2 / 3 / 3 / 4;
     border: 3px solid white;
-    background-color: #ffed2a;
+    background-color: var(--yellow);
 }
 
 .div69 {
     grid-area: 3 / 3 / 4 / 4;
     border: 3px solid white;
-    background-color: #ffed2a;
+    background-color: var(--yellow);
+}
+
+.parent-tperm {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    border: 3px solid white;
+}
+
+.pll1 {
+    grid-area: 1 / 1 / 2 / 2;
+    border-left: 10px solid var(--blue);
+    border-top: 10px solid var(--orange);
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+    background-color: var(--yellow);
+}
+
+.pll2 {
+    grid-area: 2 / 1 / 3 / 2;
+    border-left: 10px solid var(--blue);
+    border-top: 3px solid white;
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+    background-color: var(--yellow);
+}
+
+.pll3 {
+    grid-area: 3 / 1 / 4 / 2;
+    border-left: 10px solid var(--blue);
+    border-bottom: 10px solid var(--red);
+    border-top: 3px solid white;
+    border-right: 3px solid white;
+    background-color: var(--yellow);
+}
+
+.pll4 {
+    grid-area: 1 / 2 / 2 / 3;
+    border-top: 10px solid var(--red);
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+    background-color: var(--yellow);
+}
+
+.pll5 {
+    grid-area: 2 / 2 / 3 / 3;
+    border: 3px solid white;
+    background-color: var(--yellow);
+}
+
+.pll6 {
+    grid-area: 3 / 2 / 4 / 3;
+    border-bottom: 10px solid var(--orange);
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+    border-top: 3px solid white;
+    background-color: var(--yellow);
+}
+
+.pll7 {
+    grid-area: 1 / 3 / 2 / 4;
+    border-top: 10px solid green;
+    border-right: 10px solid var(--red);
+    border-left: 3px solid white;
+    border-bottom: 3px solid white;
+    background-color: var(--yellow);
+}
+
+.pll8 {
+    grid-area: 2 / 3 / 3 / 4;
+    border-right: 10px solid green;
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+    border-bottom: 3px solid white;
+    background-color: var(--yellow);
+}
+
+.pll9 {
+    grid-area: 3 / 3 / 4 / 4;
+    border-right: 10px solid var(--orange);
+    border-bottom: 10px solid green;
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+    background-color: var(--yellow);
+}
+
+.parent-hperm {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    border: 3px solid white;
+}
+
+.pll11 {
+    grid-area: 1 / 1 / 2 / 2;
+    border-left: 10px solid green;
+    border-top: 10px solid var(--red);
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+    background-color: var(--yellow);
+}
+
+.pll12 {
+    grid-area: 2 / 1 / 3 / 2;
+    border-left: 10px solid var(--blue);
+    border-top: 3px solid white;
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+    background-color: var(--yellow);
+}
+
+.pll13 {
+    grid-area: 3 / 1 / 4 / 2;
+    border-left: 10px solid green;
+    border-bottom: 10px solid var(--orange);
+    border-top: 3px solid white;
+    border-right: 3px solid white;
+    background-color: var(--yellow);
+}
+
+.pll14 {
+    grid-area: 1 / 2 / 2 / 3;
+    border-top: 10px solid var(--orange);
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+    background-color: var(--yellow);
+}
+
+.pll15 {
+    grid-area: 2 / 2 / 3 / 3;
+    border: 3px solid white;
+    background-color: var(--yellow);
+}
+
+.pll16 {
+    grid-area: 3 / 2 / 4 / 3;
+    border-bottom: 10px solid var(--red);
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+    border-top: 3px solid white;
+    background-color: var(--yellow);
+}
+
+.pll17 {
+    grid-area: 1 / 3 / 2 / 4;
+    border-top: 10px solid var(--red);
+    border-right: 10px solid var(--blue);
+    border-left: 3px solid white;
+    border-bottom: 3px solid white;
+    background-color: var(--yellow);
+}
+
+.pll18 {
+    grid-area: 2 / 3 / 3 / 4;
+    border-right: 10px solid green;
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+    border-bottom: 3px solid white;
+    background-color: var(--yellow);
+}
+
+.pll19 {
+    grid-area: 3 / 3 / 4 / 4;
+    border-right: 10px solid var(--blue);
+    border-bottom: 10px solid var(--orange);
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+    background-color: var(--yellow);
+}
+
+.parent-uperma {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    border: 3px solid white;
+}
+
+.pll21 {
+    grid-area: 1 / 1 / 2 / 2;
+    border-left: 10px solid green;
+    border-top: 10px solid var(--red);
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+    background-color: var(--yellow);
+}
+
+.pll22 {
+    grid-area: 2 / 1 / 3 / 2;
+    border-left: 10px solid var(--orange);
+    border-top: 3px solid white;
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+    background-color: var(--yellow);
+}
+
+.pll23 {
+    grid-area: 3 / 1 / 4 / 2;
+    border-left: 10px solid green;
+    border-bottom: 10px solid var(--orange);
+    border-top: 3px solid white;
+    border-right: 3px solid white;
+    background-color: var(--yellow);
+}
+
+.pll24 {
+    grid-area: 1 / 2 / 2 / 3;
+    border-top: 10px solid var(--red);
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+    background-color: var(--yellow);
+}
+
+.pll25 {
+    grid-area: 2 / 2 / 3 / 3;
+    border: 3px solid white;
+    background-color: var(--yellow);
+}
+
+.pll26 {
+    grid-area: 3 / 2 / 4 / 3;
+    border-bottom: 10px solid var(--blue);
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+    border-top: 3px solid white;
+    background-color: var(--yellow);
+}
+
+.pll27 {
+    grid-area: 1 / 3 / 2 / 4;
+    border-top: 10px solid var(--red);
+    border-right: 10px solid var(--blue);
+    border-left: 3px solid white;
+    border-bottom: 3px solid white;
+    background-color: var(--yellow);
+}
+
+.pll28 {
+    grid-area: 2 / 3 / 3 / 4;
+    border-right: 10px solid green;
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+    border-bottom: 3px solid white;
+    background-color: var(--yellow);
+}
+
+.pll29 {
+    grid-area: 3 / 3 / 4 / 4;
+    border-right: 10px solid var(--blue);
+    border-bottom: 10px solid var(--orange);
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+    background-color: var(--yellow);
+}
+
+.parent-upermb {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    border: 3px solid white;
+}
+
+.pll31 {
+    grid-area: 1 / 1 / 2 / 2;
+    border-left: 10px solid green;
+    border-top: 10px solid var(--red);
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+    background-color: var(--yellow);
+}
+
+.pll32 {
+    grid-area: 2 / 1 / 3 / 2;
+    border-left: 10px solid var(--blue);
+    border-top: 3px solid white;
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+    background-color: var(--yellow);
+}
+
+.pll33 {
+    grid-area: 3 / 1 / 4 / 2;
+    border-left: 10px solid green;
+    border-bottom: 10px solid var(--orange);
+    border-top: 3px solid white;
+    border-right: 3px solid white;
+    background-color: var(--yellow);
+}
+
+.pll34 {
+    grid-area: 1 / 2 / 2 / 3;
+    border-top: 10px solid var(--red);
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+    background-color: var(--yellow);
+}
+
+.pll35 {
+    grid-area: 2 / 2 / 3 / 3;
+    border: 3px solid white;
+    background-color: var(--yellow);
+}
+
+.pll36 {
+    grid-area: 3 / 2 / 4 / 3;
+    border-bottom: 10px solid green;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+    border-top: 3px solid white;
+    background-color: var(--yellow);
+}
+
+.pll37 {
+    grid-area: 1 / 3 / 2 / 4;
+    border-top: 10px solid var(--red);
+    border-right: 10px solid var(--blue);
+    border-left: 3px solid white;
+    border-bottom: 3px solid white;
+    background-color: var(--yellow);
+}
+
+.pll38 {
+    grid-area: 2 / 3 / 3 / 4;
+    border-right: 10px solid var(--orange);
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+    border-bottom: 3px solid white;
+    background-color: var(--yellow);
+}
+
+.pll39 {
+    grid-area: 3 / 3 / 4 / 4;
+    border-right: 10px solid var(--blue);
+    border-bottom: 10px solid var(--orange);
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+    background-color: var(--yellow);
+}
+
+.parent-zperm {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    border: 3px solid white;
+}
+
+.pll41 {
+    grid-area: 1 / 1 / 2 / 2;
+    border-left: 10px solid green;
+    border-top: 10px solid var(--red);
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+    background-color: var(--yellow);
+}
+
+.pll42 {
+    grid-area: 2 / 1 / 3 / 2;
+    border-left: 10px solid var(--red);
+    border-top: 3px solid white;
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+    background-color: var(--yellow);
+}
+
+.pll43 {
+    grid-area: 3 / 1 / 4 / 2;
+    border-left: 10px solid green;
+    border-bottom: 10px solid var(--orange);
+    border-top: 3px solid white;
+    border-right: 3px solid white;
+    background-color: var(--yellow);
+}
+
+.pll44 {
+    grid-area: 1 / 2 / 2 / 3;
+    border-top: 10px solid green;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+    background-color: var(--yellow);
+}
+
+.pll45 {
+    grid-area: 2 / 2 / 3 / 3;
+    border: 3px solid white;
+    background-color: var(--yellow);
+}
+
+.pll46 {
+    grid-area: 3 / 2 / 4 / 3;
+    border-bottom: 10px solid var(--blue);
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+    border-top: 3px solid white;
+    background-color: var(--yellow);
+}
+
+.pll47 {
+    grid-area: 1 / 3 / 2 / 4;
+    border-top: 10px solid var(--red);
+    border-right: 10px solid var(--blue);
+    border-left: 3px solid white;
+    border-bottom: 3px solid white;
+    background-color: var(--yellow);
+}
+
+.pll48 {
+    grid-area: 2 / 3 / 3 / 4;
+    border-right: 10px solid var(--orange);
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+    border-bottom: 3px solid white;
+    background-color: var(--yellow);
+}
+
+.pll49 {
+    grid-area: 3 / 3 / 4 / 4;
+    border-right: 10px solid var(--blue);
+    border-bottom: 10px solid var(--orange);
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+    background-color: var(--yellow);
+}
+
+.parent-aperm {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    border: 3px solid white;
+}
+
+.pll51 {
+    grid-area: 1 / 1 / 2 / 2;
+    border-left: 10px solid var(--red);
+    border-top: 10px solid var(--blue);
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+    background-color: var(--yellow);
+}
+
+.pll52 {
+    grid-area: 2 / 1 / 3 / 2;
+    border-left: 10px solid var(--blue);
+    border-top: 3px solid white;
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+    background-color: var(--yellow);
+}
+
+.pll53 {
+    grid-area: 3 / 1 / 4 / 2;
+    border-left: 10px solid var(--orange);
+    border-bottom: 10px solid var(--blue);
+    border-top: 3px solid white;
+    border-right: 3px solid white;
+    background-color: var(--yellow);
+}
+
+.pll54 {
+    grid-area: 1 / 2 / 2 / 3;
+    border-top: 10px solid var(--orange);
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+    background-color: var(--yellow);
+}
+
+.pll55 {
+    grid-area: 2 / 2 / 3 / 3;
+    border: 3px solid white;
+    background-color: var(--yellow);
+}
+
+.pll56 {
+    grid-area: 3 / 2 / 4 / 3;
+    border-bottom: 10px solid var(--red);
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+    border-top: 3px solid white;
+    background-color: var(--yellow);
+}
+
+.pll57 {
+    grid-area: 1 / 3 / 2 / 4;
+    border-top: 10px solid green;
+    border-right: 10px solid var(--red);
+    border-left: 3px solid white;
+    border-bottom: 3px solid white;
+    background-color: var(--yellow);
+}
+
+.pll58 {
+    grid-area: 2 / 3 / 3 / 4;
+    border-right: 10px solid green;
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+    border-bottom: 3px solid white;
+    background-color: var(--yellow);
+}
+
+.pll59 {
+    grid-area: 3 / 3 / 4 / 4;
+    border-right: 10px solid var(--orange);
+    border-bottom: 10px solid green;
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+    background-color: var(--yellow);
 }
